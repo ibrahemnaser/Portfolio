@@ -1,0 +1,400 @@
+/* start global rules */
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #e0e0e0;
+}
+ul{
+  list-style: none;
+  padding: 0
+}
+a{
+  text-decoration: none;
+}
+a:hover,
+button:hover{
+  cursor: pointer;
+}
+.container{
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* extra small screens */
+@media (max-width: 767px){
+  .container{
+    width: 80%
+  }
+}
+/* small screens */
+@media (min-width: 768px){
+  .container{
+    width: 750px
+  }
+}
+/* medium screens */
+@media (min-width: 992px){
+  .container{
+    width: 970px
+  }
+}
+/* large screens */
+@media (min-width: 1200px){
+  .container{
+    width: 1170px
+  }
+}
+/* end global rules */
+
+/* start component */
+.aside-section-h{
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: normal;
+}
+.aside-section-i{
+  font-size: 20px;
+  color: #99BE41;
+}
+.aside-grid{
+  border-top: 1px solid #99BE41;
+  padding: 40px 0;
+  display: grid;
+  column-gap: 10%;
+  row-gap: 10%;
+  grid-template-columns: 10% 80%;
+  align-items: center;
+}
+@media (max-width: 767px){
+  .aside-grid{
+    grid-template-columns: 40% 50%
+  }
+  .aside-grid i{
+    text-align: right;
+    margin-right: 10%;
+  }
+  .aside-grid h3{
+    width: fit-content;
+    left: -40px;
+    position: relative;
+  }
+}
+
+/* end component */
+
+/* start bage style */
+.container .inner-border{
+  border-top: 10px solid #99BE41;
+  border-radius: 2px;
+  display: flex;
+  gap: 10%;
+}
+@media (max-width: 767px){
+  .container .inner-border{
+    flex-direction: column;
+  }
+}
+/* start aside */
+aside{
+  width: 40%;
+  background-color: #333;
+  color: white
+}
+@media (max-width: 767px){
+  aside{
+    width: 100%
+  }
+}
+aside img{
+  width: 100%
+}
+@media (max-width: 767px){
+  aside img{
+  }
+}
+aside .content{
+  padding: 40px 20px
+}
+@media (max-width: 767px){
+  aside .content{
+  }
+}
+aside .content h2{
+  margin-bottom: 20px
+}
+@media (max-width: 767px){
+  aside .content h2{
+    font-size: 30px;
+    text-align: center;
+  }
+}
+aside .content p{
+  color: #ccc;
+  margin-bottom: 40px
+}
+@media (max-width: 767px){
+  aside .content p{
+    font-size: 20px;
+    text-align: center;
+  }
+}
+aside .content p.address::before{
+  font-family: "font awesome 6 free";
+  content: "\f3c5";
+  font-weight: 900;
+  position: absolute;
+  left: -15px;
+  font-size: 10px;
+  bottom: 3px;
+  color: #99BE41;
+}
+aside .content p.address{
+  color: #fff;
+  margin-bottom: 40px;
+  position: relative;
+  margin-left: 15px;
+}
+@media (max-width: 767px){
+  aside .content p.address::before{
+    left: -25px;
+    font-size: 15px;
+  }
+  aside .content p.address{
+    width: fit-content;
+    margin: 40px auto;
+  }
+}
+@media (max-width: 552px){
+  aside .content p.address{
+    font-size: 15px;
+  }
+  aside .content p.address::before{
+    left: -20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px){
+  aside .content .about{
+    grid-template-columns: 40% 50%
+  }
+  aside .content .about i{
+    text-align: right;
+    margin-right: 10%;
+  }
+  aside .content .about h3{
+    width: fit-content;
+    left: -40px;
+    position: relative;
+  }
+}
+@media (max-width: 552px){
+  aside .content .about i{
+    font-size: 20px;
+    margin-right: 40%;
+  }
+  aside .content .about h3{
+    font-size: 28px;
+  }
+  aside .content .about p{
+    font-size: 16px;
+  }
+}
+aside .content .about p{
+  color: #ccc;
+  margin: 20px 0 40px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  line-height: 1.6
+}
+@media (max-width: 767px){
+  aside .content .about p{
+    text-align: center;
+  }
+}
+@media (max-width: 552px){
+  aside .content .contact i.aside-section-i,
+  aside .content .lang i.aside-section-i{
+    font-size: 20px;
+    margin-right: 40%;
+  }
+  aside .content .contact h3,
+  aside .content .lang h3{
+    font-size: 28px;
+  }
+}
+aside .content .contact ul{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 20px
+}
+aside .content .contact ul li{
+  margin-bottom: 20px
+}
+aside .content .contact ul li i{
+  color: #ccc;
+  margin-right: 15px
+}
+aside .content .contact ul li a{
+  color: white;
+}
+@media (max-width: 992px){
+  aside .content .contact ul li i{
+    font-size: 14px
+  }
+  aside .content .contact ul li a{
+    font-size: 14px
+  }
+}
+@media (max-width: 767px){
+  aside .content .contact ul li i{
+    font-size: 18px
+  }
+  aside .content .contact ul li a{
+    font-size: 18px
+  }
+}
+@media (max-width: 400px){
+  aside .content .contact ul li a{
+    font-size: 14px
+  }
+}
+aside .content .lang{
+  padding-bottom: 0
+}
+aside .content .lang ul{
+  margin-top: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+aside .content .lang ul li{
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 20px
+}
+aside .content .lang ul li span{
+  font-size: 12px
+}
+/* end aside */
+
+/* start main side */
+main{
+  width: 70%
+}
+@media (max-width: 767px){
+  main{
+    width: 100%
+  }
+}
+.main-con{
+  background-color: white;
+  padding: 20px 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.main-con h2{
+  color: #99BE41;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.main-con .holder{
+}
+.main-con .holder .box{
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: 80% auto;
+  align-items: end;
+  justify-content: space-between;
+}
+.main-con .holder .box:last-child{
+  border: none;
+}
+.main-con .holder .box span:first-child{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 500;
+}
+.main-con .holder .box h3{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-transform: capitalize;
+}
+.main-con .holder .box h3 strong{
+  text-transform: uppercase;
+}
+.main-con .holder .box span.location{
+  grid-column-start: 2;
+  grid-column-end: 3;;
+  position: relative;
+  text-transform: capitalize;
+  color: #666;
+}
+.main-con .holder .box span.location::before{
+  font-family: "font awesome 6 free";
+  content: "\f3c5";
+  font-weight: 900;
+  position: absolute;
+  left: -15px;
+  font-size: 10px;
+  bottom: 3px;
+  color: #99BE41;
+}
+.main-con .holder .box ul{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 10px;
+  color: #666;
+  list-style: inside;
+}
+.main-con .holder .box ul li{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-transform: capitalize;
+  padding: 5px 0;
+}
+
+/* start projects */
+.proj-container .proj-title a{
+  color: #000
+}
+
+/* end projects */
+
+/* start skills */
+.skl-container dl{
+  list-style: inside;
+}
+.skl-container dl dt{
+  text-transform: capitalize;
+  padding: 5px 0;
+  color: #666;
+  font-weight: bold;
+}
+.skl-container dl dt a{
+  text-transform: capitalize;
+  color: #99BE41;
+}
+.skl-container dl dd{
+  text-transform: capitalize;
+  padding-left: 10px;
+  font-size: 12px;
+  display: list-item;
+  list-style-type: disc;
+}
+
+/* end skills */
+
+/* end main side */
+
+/* end bage style */
